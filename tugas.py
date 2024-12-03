@@ -41,8 +41,13 @@ data_panen = {
     }
 }
 
-#Menampilkan seluruh data 
+# Menampilkan seluruh data 
 for lokasi, nama in data_panen.items():
     print(f"lokasi : {nama['nama_lokasi']} ")
     for panen, hasil in data_panen.items():
         print(f"Panen : {hasil['hasil_panen']}")
+
+
+# Menampilkan jumlah hasil panen jagung dari lokasi2
+hasil_lokasi2 = data_panen ['lokasi2'] ['hasil_panen'] ['jagung']
+print(f"Hasil panen dari lokasi 2 yaitu: {hasil_lokasi2}")
