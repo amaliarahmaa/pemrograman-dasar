@@ -75,3 +75,24 @@ print(f"Kebun B  Padi: {hasil_padi_lokasi2}, Kedelai: {hasil_kedelai_lokasi2}")
 print(f"Kebun C  Padi: {hasil_padi_lokasi3}, Kedelai: {hasil_kedelai_lokasi3}")
 print(f"Kebun D  Padi: {hasil_kedelai_lokasi4}, Kedelai: {hasil_kedelai_lokasi4}")
 print(f"Kebun E  Padi: {hasil_kedelai_lokasi5}, Kedelai: {hasil_kedelai_lokasi5}")
+
+#Membuat variabel terpisah untuk menyimpan jumlah hasil panen padi dan kedelai dari setiap lokasi.
+kebun_a_padi = data_panen['lokasi1']['hasil_panen']['padi']
+kebun_b_padi = data_panen['lokasi2']['hasil_panen']['padi']
+kebun_c_padi = data_panen['lokasi3']['hasil_panen']['padi']
+kebun_d_padi = data_panen['lokasi4']['hasil_panen']['padi']
+kebun_e_padi = data_panen['lokasi5']['hasil_panen']['padi']
+
+kebun_a_kedelai = data_panen['lokasi1']['hasil_panen']['kedelai']
+kebun_b_kedelai = data_panen['lokasi2']['hasil_panen']['kedelai']
+kebun_c_kedelai = data_panen['lokasi3']['hasil_panen']['kedelai']
+kebun_d_kedelai = data_panen['lokasi4']['hasil_panen']['kedelai']
+kebun_e_kedelai = data_panen['lokasi5']['hasil_panen']['kedelai']
+
+# Output hasil
+print("Hasil Panen Padi dan Kedelai dari Setiap Lokasi:")
+print(f"Kebun a Padi: {kebun_a_padi}, Kedelai: {kebun_a_kedelai}")
+print(f"Kebun b Padi: {kebun_b_padi}, Kedelai: {kebun_b_kedelai}")
+print(f"Kebun c Padi: {kebun_c_padi}, Kedelai: {kebun_c_kedelai}")
+print(f"Kebun d Padi: {kebun_d_padi}, Kedelai: {kebun_d_kedelai}")
+print(f"Kebun e Padi: {kebun_e_padi}, Kedelai: {kebun_e_kedelai}")
